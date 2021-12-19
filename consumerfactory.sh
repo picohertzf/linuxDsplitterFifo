@@ -1,6 +1,9 @@
 #!/bin/bash
 
-## Create a consumer script for each given name in the arguments
+#######*****#######
+## Create a consumer script with the name and for each given name in the arguments
+#######*****#######
+
 for var in "$@"
 do
     consumer_name=$var

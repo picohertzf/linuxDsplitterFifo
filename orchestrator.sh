@@ -1,6 +1,8 @@
 #!/bin/bash
 
+#######*****#######
 ## Orchestrator: start processes in required order
+#######*****#######
 
 ### 1st: Create the FIFOs
 echo -e '\n*** Step 1 ***'
@@ -31,6 +33,8 @@ bash ./consumerfactory.sh con1 con2
 
 ### 3rd: Run the datastreamer and pipe to stream splitter
 echo -e '\n*** Step 3 ***'
+# Runs the data streamer under process name datastreamer (exec -a datastreamer)
+# Runs the stream plitter under process name datasplitter (exec -a datasplitter)
 exec -a datastreamer bash ./datastreamer.sh | exec -a datasplitter bash ./streamsplitter.sh $datafifo1 $datafifo2 &
 
 ### 4th: Start the FIFO consumers

@@ -1,6 +1,10 @@
 #!/bin/bash
 
+#######*****#######
 ## Dummy consumer factory
+## Called from data consumers, to create a dummy data consumer with the given name in the arguments
+## Generally only one name in the arguments is passed, but the code can handle multiple arguments
+#######*****#######
 
 for var in "$@"
 do

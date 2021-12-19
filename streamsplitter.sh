@@ -1,7 +1,10 @@
 #!/bin/bash
 
+#######*****#######
 ## Data stream splitter
-## Will split input data stream, piped into this process, into 2 similar output streams (duplicate the input)
+## Will split input data stream that is piped into this 
+## process into 2 similar output streams (duplicate the input) and the standard output
+#######*****#######
 
 ## Name of the named pipes or FIFos received in arguments
 datafifo1=$1
