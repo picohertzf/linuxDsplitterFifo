@@ -1,4 +1,4 @@
-# Data stream splitter in Linux with shell/bash scripting: an example
+# Data stream splitter in Linux with shell/bash scripting using FIFOs: an example
 *By Picohertz Dec 2021*
 
 **This code is explained in details in this video.**\
